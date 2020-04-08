@@ -2,11 +2,14 @@ import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
 import Home from "./src/page/home"; 
-import Sejam from "./src/page/sejam"; 
+import sejam from "./src/page/sejam"; 
+import Register from "./src/page/register"; 
 
 const MainNavigator = createStackNavigator({
   Home: {screen: Home},
-  Sejam: {screen: Sejam},
+  Register: {screen: Register},
+  Sejam: {screen: sejam},
+  Register: {screen: Register},
 },{
   headerMode: "none"
 });
